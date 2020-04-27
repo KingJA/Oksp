@@ -1,0 +1,15 @@
+ext {
+    compileSdkVersion = 26
+    buildToolsVersion = "26.0.1"
+    minSdkVersion = 15
+    targetSdkVersion = 26
+    versionCode = 1
+    versionName = "1.1.1"
+    supportVersion = '26.+'
+
+    userOrg = 'kingja'
+    groupId = 'com.kingja.activitybus'
+    publishVersion = '1.2.5'
+    desc = 'A smart library for transfering data between Activities.'
+    website = 'https://github.com/KingJA/ActivityBus'
+}

@@ -1,1 +1,1 @@
-include ':app', ':oksp'
+include ':app', ':oksp', ':oksp_annotations', ':oksp_compiler'

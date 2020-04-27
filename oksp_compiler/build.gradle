@@ -1,0 +1,23 @@
+apply plugin: 'java-library'
+apply plugin: 'com.novoda.bintray-release'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.squareup:javapoet:1.9.0'
+    implementation project(':oksp_annotations')
+//    compile "com.kingja.activitybus:activitybus-annotation:$rootProject.ext.publishVersion"
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
+
+
+publish {
+    artifactId = 'oksp_annotations-compiler'
+    userOrg = rootProject.ext.userOrg
+    groupId = rootProject.ext.groupId
+    publishVersion = rootProject.ext.publishVersion
+    desc =rootProject.ext.desc
+    website = rootProject.ext.website
+}
+
